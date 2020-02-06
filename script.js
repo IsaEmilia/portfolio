@@ -1,3 +1,5 @@
+// Code for the sticky nav
+
 const nav = document.querySelector('#nav');
 let topOfNav = nav.offsetTop;
 
@@ -12,3 +14,17 @@ function fixNav() {
 }
 
 window.addEventListener('scroll', fixNav);
+
+// Code for opening tabs from nav bar
+
+const tab = document.getElementsByClassName('tab-content')
+const tabLink = document.getElementsByClassName('tablink')
+const defaultOpen = document.getElementById('defaultOpen')
+
+
+function openTab() {
+
+console.log('hello')
+
+}
+
