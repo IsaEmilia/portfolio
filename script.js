@@ -24,7 +24,33 @@ const defaultOpen = document.getElementById('defaultOpen')
 
 function openTab() {
 
-console.log('hello')
+console.log('hello') 
 
+}
+
+// Gallery
+
+const modal = document.getElementById('myModal');
+const img = document.getElementById('myImg');
+const modalImg = document.getElementById('img01');
+const captionTxt = document.getElementById('caption');
+const span = document.getElementsByClassName('close')[0];
+
+/*img.onclick = function() {
+    modal.style.display = 'block';
+    modalImg.src = this.alt;
+    captionTxt.innerHTML = this.alt;
+
+}
+
+span.onclick = function(){
+    modal.style.display = 'none'
+}
+*/
+
+function openImg() {
+    modal.style.display = 'block';
+    modalImg.src = this.alt;
+    captionTxt.innerHTML = this.alt;
 }
 
