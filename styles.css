@@ -1,193 +1,208 @@
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
 html {
-    box-sizing: border-box;
-    background: #eeeeee;
-    font-family: 'helvetica neue';
-    font-size: 20px;
-    font-weight: 200;
+  box-sizing: border-box;
+  background: #eeeeee;
+  font-family: 'helvetica neue';
+  font-size: 20px;
+  font-weight: 200;
+}
+
+body {
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.tab-content {
+  max-width: 800px;
+  margin: 40px auto;
+  background: white;
+  padding: 50px;
+  text-align: justify;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
+  transform: scale(1);
+  transition: transform 0.5s;
+
+}
+
+#defaulOpen {
+
+  max-width: 800px;
+  margin: 40px auto;
+  background: white;
+  padding: 50px;
+  text-align: justify;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
+  transform: scale(1);
+  transition: transform 0.5s;
+}
+
+#profile-pic {
+  border-radius: 50%;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
+}
+
+#me {}
+
+#novel {}
+
+header {
+  text-align: center;
+  height: 92vh;
+  background: url(landscape-975091_1920.jpg) bottom center no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  color: rgba(206, 194, 194, 0.623);
+  font-size: 7vw;
+  letter-spacing: 30px;
+  font-family: 'Muli', sans-serif;
+  text-shadow: 3px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  color: rgba(255, 255, 255, 0.623);
+  font-family: 'Muli', sans-serif;
+  text-shadow: 3px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+nav {
+  background: black;
+  top: 0;
+  width: 100%;
+  transition: all 0.8s;
+  position: relative;
+  z-index: 1;
+}
+
+.fixed-nav nav {
+  position: fixed;
+  box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  font-family: 'Muli', sans-serif;
+  margin: 0;
+  padding: 10;
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav button {
+  text-decoration: none;
+  padding: 35px 20px;
+  display: inline-block;
+  color: white;
+  background-color: inherit;
+  border: none;
+  font-size: 20px;
+  transition: all 0.2s;
+  text-transform: uppercase;
+}
+
+nav button:hover {
+  color: grey;
+}
+
+nav button:active {
+  color: grey;
+  background-color: rgb(41, 38, 38);
+  outline: none;
+}
+
+
+
+#myImg {
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+#myImg:hover {
+  opacity: 0.7;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;/ background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+.modal-content,
+#caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0)
   }
 
-  body {
-    margin: 0;
+  to {
+    transform: scale(1)
   }
+}
 
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
 
-  .tab-content {
-    max-width: 800px;
-    margin: 40px auto;
-    background: white;
-    padding: 50px;
-    text-align: justify;
-    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
-    transform: scale(1);
-    transition: transform 0.5s;
-   
-  }
-
-  #defaulOpen {
-    max-width: 800px;
-    margin: 40px auto;
-    background: white;
-    padding: 50px;
-    text-align: justify;
-    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
-    transform: scale(1);
-    transition: transform 0.5s;
-  }
-
-  #profile-pic {
-    border-radius: 50%;
-    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
-  }
-
-  header {
-    text-align: center;
-    height: 92vh;
-    background: url(landscape-975091_1920.jpg) bottom center no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  h1 {
-    color: rgba(206, 194, 194, 0.623);
-    font-size: 7vw;
-    letter-spacing: 30px;
-    font-family: 'Muli', sans-serif;
-    text-shadow: 3px 4px 0 rgba(0,0,0,0.2);
-  }
-
-  h2 {
-    color: rgba(255, 255, 255, 0.623);
-    font-family: 'Muli', sans-serif;
-    text-shadow: 3px 4px 0 rgba(0,0,0,0.2);
-  }
-
-  nav {
-    background: black;
-    top: 0;
-    width: 100%;
-    transition: all 0.8s;
-    position: relative;
-    z-index: 1;
-  }
-
-  .fixed-nav nav {
-    position: fixed;
-    box-shadow: 0 5px rgba(0, 0, 0, 0.1);
- }
- 
- nav ul {
-   font-family: 'Muli', sans-serif;
-   margin: 0;
-   padding: 10;
-   list-style: none;
-   display: flex;
- }
- 
- nav li {
-   flex: 1;
-   text-align: center;
-   display: flex;
-   justify-content: center;
-   align-items: center;
- }
-
- nav button {
-    text-decoration: none;
-    padding: 35px 20px;
-    display: inline-block;
-    color: white;
-    background-color: inherit;
-    border: none;
-    font-size: 20px;
-    transition: all 0.2s;
-    text-transform: uppercase;
-  }
-
-  nav button:hover{
-    color: grey;
-  }
-
-  nav button:active{
-    color: grey;
-    background-color: rgb(41, 38, 38);
-    outline: none;
-  }
-
-  #myImg {
-    transition: 0.3s;
-    border-radius: 5px;
-  }
-
-  #myImg:hover {
-    opacity: 0.7;
-  }
-
-  .modal {
-    display: none;
-    position: fixed; 
-    z-index: 1; 
-    padding-top: 100px; 
-    left: 0;
-    top: 0;
-    width: 100%; 
-    height: 100%; 
-    overflow: auto; /
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.9);
-  }
-
-  .modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-  }
-
-  #caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #ccc;
-    padding: 10px 0;
-    height: 150px;
-  }
-
-  .modal-content, #caption {
-    animation-name: zoom;
-    animation-duration: 0.6s;
-  }
-
-  @keyframes zoom {
-    from {transform:scale(0)}
-    to {transform:scale(1)}
-  }
-
-  .close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-  }
-
-  .close:hover,
+.close:hover,
 .close:focus {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
 }
 
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 700px) {
   .modal-content {
     width: 100%;
   }

@@ -30,13 +30,13 @@ console.log('hello')
 
 // Gallery
 
-const modal = document.getElementById('myModal');
-const img = document.getElementById('myImg');
-const modalImg = document.getElementById('img01');
-const captionTxt = document.getElementById('caption');
-const span = document.getElementsByClassName('close')[0];
+let modal = document.getElementById('myModal');
+let img = document.getElementById('myImg');
+let modalImg = document.getElementById('img01');
+let captionTxt = document.getElementById('caption');
+let span = document.getElementsByClassName('close')[0];
 
-/*img.onclick = function() {
+img.onclick = function() {
     modal.style.display = 'block';
     modalImg.src = this.alt;
     captionTxt.innerHTML = this.alt;
@@ -46,11 +46,9 @@ const span = document.getElementsByClassName('close')[0];
 span.onclick = function(){
     modal.style.display = 'none'
 }
-*/
+
 
 function openImg() {
-    modal.style.display = 'block';
-    modalImg.src = this.alt;
-    captionTxt.innerHTML = this.alt;
+
 }
 
