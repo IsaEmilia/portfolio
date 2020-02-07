@@ -128,13 +128,14 @@ nav button:active {
 .row {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 4px;
+  padding: 0
 }
 
 .column {
-  flex: 25%;
+  float: right;
+  flex: 50%;
   max-width: 25%;
-  padding: 0 4px;
+  
 }
 
 .column img {
@@ -182,7 +183,7 @@ nav button:active {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgb(218, 218, 218);
+  background-color: rgba(0, 0, 0, 0.795);
 }
 
 .modal-content {
@@ -212,8 +213,6 @@ nav button:active {
 
 .mySlides {
   display: none;
-  justify-content: center;
-  align-content: center;
 }
 
 .prev,
@@ -252,6 +251,7 @@ nav button:active {
   padding: 8px 12px;
   position: absolute;
   top: 0;
+  display: none;
 }
 
 
@@ -264,6 +264,7 @@ nav button:active {
 
 img.demo {
   opacity: 0.6;
+  max-height: 10vh;
 }
 
 .active,
