@@ -73,7 +73,7 @@ h3 {
 }
 
 nav {
-  background: black;
+  background: rgb(12, 12, 12);
   top: 0;
   width: 100%;
   transition: all 0.8s;
