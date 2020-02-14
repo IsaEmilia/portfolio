@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Megrim&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
 html {
   box-sizing: border-box;
@@ -58,17 +59,17 @@ header {
 }
 
 h1 {
-  color: rgba(206, 194, 194, 0.623);
-  font-size: 7vw;
+  color: rgba(206, 194, 194, 0.918);
+  font-size: 9vw;
   letter-spacing: 30px;
-  font-family: 'Muli', sans-serif;
-  text-shadow: 3px 4px 0 rgba(0, 0, 0, 0.2);
+  font-family: 'Megrim', cursive;
+  font-weight: bold;
 }
 
-h2 {
-  color: rgba(255, 255, 255, 0.623);
-  font-family: 'Muli', sans-serif;
-  text-shadow: 3px 4px 0 rgba(0, 0, 0, 0.2);
+
+
+h3 {
+  font-family: 'Megrim', cursive;
 }
 
 nav {
@@ -86,7 +87,7 @@ nav {
 }
 
 nav ul {
-  font-family: 'Muli', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 10;
   list-style: none;
