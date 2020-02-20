@@ -51,7 +51,7 @@ body {
 header {
   text-align: center;
   height: 92vh;
-  background: url(landscape-975091_1920.jpg) bottom center no-repeat;
+  background: linear-gradient(rgba(255, 255, 255, 0.116), rgba(0, 0, 0, 0.9)), url(landscape-975091_1920.jpg) bottom center no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -59,11 +59,10 @@ header {
 }
 
 h1 {
-  color: rgba(206, 194, 194, 0.918);
-  font-size: 9vw;
+  color: rgba(0, 0, 0, 0.575);
+  font-size: 10vw;
   letter-spacing: 30px;
   font-family: 'Megrim', cursive;
-  font-weight: bold;
 }
 
 
@@ -73,7 +72,7 @@ h3 {
 }
 
 nav {
-  background: rgb(12, 12, 12);
+  background: rgb(5, 5, 5);
   top: 0;
   width: 100%;
   transition: all 0.8s;
@@ -106,7 +105,7 @@ nav button {
   text-decoration: none;
   padding: 35px 20px;
   display: inline-block;
-  color: white;
+  color: rgb(160, 160, 160);
   background-color: inherit;
   border: none;
   font-size: 20px;
@@ -115,7 +114,7 @@ nav button {
 }
 
 nav button:hover {
-  color: grey;
+  color: rgb(83, 83, 83);
 }
 
 nav button:active {
