@@ -25,7 +25,7 @@
   <div>
     <nav id="nav">
       <ul>
-        <li><a href="#about"class="tablink">About</a></li>
+        <li><a id="aboutLink" href="#about"class="tablink">About</a></li>
         <li><a href="#webDesign" class="tablink">Web Design</a></li>
         <li><a href="#photography" class="tablink">Photography</a></li>
         <li><a href="#drawing" class="tablink">Drawings</a></li>
@@ -104,15 +104,17 @@
 
       <div class="row">
 
-        <div class="column">
+        <!--<div class="column">
           <img src="pics/2019-06-15 03.48.26 1.jpg" width="20%" alt="Oula" onclick="openModal();currentSlide(1)"
             class="hover-shadow" />
-        </div>
+        </div>!-->
 
 
-        <div class="column">
-          <img src="pics/2019-06-18 09.39.46 1.jpg" width="20%" alt="Church" onclick="openModal();currentSlide(2)"
-            class="hover-shadow" />
+        <div id="estonia" class="column">
+          <a href="gallery.html">
+           <img src="pics/2019-06-18 09.39.46 1.jpg" width="20%" alt="Church" onclick="openModal();currentSlide(2)"
+            class="hover-shadow"/>
+          </a>
         </div>
 
         <div class="column">
@@ -169,130 +171,7 @@
       </div>
 
 
-      <div id="myModal" class="modal">
-        <span class="close cursor" onclick="closeModal()">&times;</span>
-        <div class="modal-content">
-
-          <div class="mySlides">
-            <div class="numbertext">1 / 8</div>
-            <img src="pics/2019-06-15 03.48.26 1.jpg" style="width:100%">
-          </div>
-
-          <div class="mySlides">
-            <div class="numbertext">2 / 8</div>
-            <img src="pics/2019-06-18 09.39.46 1.jpg" style="width:100%">
-          </div>
-
-          <div class="mySlides">
-            <div class="numbertext">3 / 8</div>
-            <img src="pics/2019-06-18 11.34.33 1.jpg" style="width:100%">
-          </div>
-
-          <div class="mySlides">
-            <div class="numbertext">4 / 8</div>
-            <img src="pics/2019-07-26 03.34.12 1.jpg" style="width:100%">
-          </div>
-
-          <div class="mySlides">
-            <div class="numbertext">5 / 8</div>
-            <img src="pics/2019-07-30 12.38.02 1.jpg" style="width:100%">
-          </div>
-
-          <div class="mySlides">
-            <div class="numbertext">6 / 8</div>
-            <img src="pics/2019-07-31 12.46.04 1.jpg" style="width:100%">
-          </div>
-
-          <div class="mySlides">
-            <div class="numbertext">7 / 8</div>
-            <img src="pics/2019-08-01 06.11.17 1.jpg" style="width:100%">
-          </div>
-
-          <div class="mySlides">
-            <div class="numbertext">8 / 8</div>
-            <img src="pics/2019-08-08 03.06.27 1.jpg" style="width:100%">
-          </div>
-
-          <div class="mySlides">
-            <div class="numbertext">8 / 8</div>
-            <img src="pics/2019-06-18 09.20.19 1.jpg" style="width:100%">
-          </div>
-
-          <div class="mySlides">
-            <div class="numbertext">8 / 8</div>
-            <img src="pics/2019-08-08 03.03.18 1.jpg" style="width:100%">
-          </div>
-
-          <div class="mySlides">
-            <div class="numbertext">8 / 8</div>
-            <img src="pics/2019-08-16 04.56.47 1.jpg" style="width:100%">
-          </div>
-
-          <div class="mySlides">
-            <div class="numbertext">8 / 8</div>
-            <img src="pics/2019-08-03 09.09.25 1.jpg" style="width:100%">
-          </div>
-
-
-
-
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-
-          <div class="caption-container">
-            <p id="caption"></p>
-          </div>
-
-          <div class="column">
-            <img class="demo" src="pics/2019-06-15 03.48.26 1.jpg" onclick="currentSlide(1)" alt="Oula">
-          </div>
-
-          <div class="column">
-            <img class="demo" src="pics/2019-06-18 09.39.46 1.jpg" onclick="currentSlide(2)" alt="Church">
-          </div>
-
-          <div class="column">
-            <img class="demo" src="pics/2019-06-18 11.34.33 1.jpg" onclick="currentSlide(3)" alt="To Beach">
-          </div>
-
-          <div class="column">
-            <img class="demo" src="pics/2019-07-26 03.34.12 1.jpg" onclick="currentSlide(4)" alt="Waterlily">
-          </div>
-
-          <div class="column">
-            <img class="demo" src="pics/2019-07-30 12.38.02 1.jpg" onclick="currentSlide(5)" alt="Log">
-          </div>
-
-          <div class="column">
-            <img class="demo" src="pics/2019-07-31 12.46.04 1.jpg" onclick="currentSlide(6)" alt="Sunset">
-          </div>
-
-          <div class="column">
-            <img class="demo" src="pics/2019-08-01 06.11.17 1.jpg" onclick="currentSlide(7)" alt="Bucket">
-          </div>
-
-          <div class="column">
-            <img class="demo" src="pics/2019-08-08 03.06.27 1.jpg" onclick="currentSlide(8)" alt="Mirror">
-          </div>
-
-          <div class="column">
-            <img class="demo" src="pics/2019-06-18 09.20.19 1.jpg" onclick="currentSlide(8)" alt="Window">
-          </div>
-
-          <div class="column">
-            <img class="demo" src="pics/2019-08-08 03.03.18 1.jpg" onclick="currentSlide(8)" alt="Purple Lake">
-          </div>
-
-          <div class="column">
-            <img class="demo" src="pics/2019-08-16 04.56.47 1.jpg" onclick="currentSlide(8)" alt="Luna">
-          </div>
-
-          <div class="column">
-            <img class="demo" src="pics/2019-08-03 09.09.25 1.jpg" onclick="currentSlide(8)" alt="Woods">
-          </div>
-
-        </div>
+      
       </div>
     </div>
 
