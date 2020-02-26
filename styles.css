@@ -19,6 +19,10 @@ h1 {
   font-family: 'Megrim', cursive;
 }
 
+.hidden{
+  display: none;
+}
+
 /* Navbar styling starts here! */
 nav {
   background: rgb(5, 5, 5);
@@ -32,7 +36,10 @@ nav {
 .fixed-nav nav {
   position: fixed;
   box-shadow: 0 5px rgba(0, 0, 0, 0.1);
-  height: 8%;
+}
+
+.fixed-nav  a {
+  padding: 20px 20px;
 }
 
 nav ul {
@@ -47,13 +54,12 @@ nav li {
   flex: 1;
   text-align: center;
   display: flex;
-  justify-content: centesr;
   align-items: center;
 }
 
 nav a {
   text-decoration: none;
-  padding: 35px 20px;
+  padding: 30px 20px;
   display: inline-block;
   color: rgb(160, 160, 160);
   background-color: inherit;
@@ -65,12 +71,6 @@ nav a {
 
 nav a:hover {
   color: rgb(83, 83, 83);
-}
-
-nav a:active {
-  color: grey;
-  background-color: rgb(41, 38, 38);
-  outline: none;
 }
 
 
@@ -107,11 +107,13 @@ h3 {
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
 }
 
-#defaulOpen {
+#about {
   max-width: 800px;
   margin: 40px auto;
+  margin-top: 60px;
   background: white;
   padding: 50px;
+  padding-top: 100px;
   text-align: justify;
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
   transition: transform 0.5s;
