@@ -20,6 +20,7 @@ function betterFixNav() {
 
 window.addEventListener ('', betterFixNav)
 window.addEventListener('scroll', fixNav);
+window.addEventListener('load', fixNav);
 
 
 // // Gallery
