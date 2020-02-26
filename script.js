@@ -13,12 +13,7 @@ function fixNav(callMe) {
   }
 
 
-function betterFixNav() {
-
-
-}
-
-window.addEventListener ('', betterFixNav)
+window.addEventListener ('load', fixNav)
 window.addEventListener('scroll', fixNav);
 
 
