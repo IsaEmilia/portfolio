@@ -15,7 +15,6 @@ function fixNav(callMe) {
 
 window.addEventListener ('load', fixNav)
 window.addEventListener('scroll', fixNav);
-window.addEventListener('load', fixNav);
 
 
 // // Gallery
