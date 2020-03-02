@@ -8,9 +8,11 @@ function fixNav(callMe) {
     if (window.scrollY >= topOfNav) {
         document.body.style.paddingTop = nav.offsetHeight + 'px';
         document.body.classList.add('fixed-nav');
-        header.classList.add('hidden');
-    } 
-  }
+        
+    } else {
+      document.body.classList.remove('fixed-nav')
+    }
+  } 
 
 
 window.addEventListener ('load', fixNav)
