@@ -19,9 +19,10 @@ h1 {
   font-family: 'Megrim', cursive;
 }
 
-.hidden{
+.hidden {
   display: none;
 }
+
 
 /* Navbar styling starts here! */
 nav {
@@ -38,7 +39,7 @@ nav {
   box-shadow: 0 5px rgba(0, 0, 0, 0.1);
 }
 
-.fixed-nav  a {
+.fixed-nav a {
   padding: 20px 20px;
 }
 
@@ -90,7 +91,7 @@ body {
 *,
 *:before,
 *:after {
-  box-sizing:border-box;
+  box-sizing: border-box;
 }
 
 h3 {
@@ -126,79 +127,39 @@ h3 {
 }
 
 
-/* Gallery styles starts riiight here */
+
+
+/* Gallery styles start riiight here */
+
 .panels {
-  min-height: 50vh;
-  overflow: hidden;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
 }
 
-.panel {
-  background: rgba(0, 0, 0, 0.404);
-  box-shadow: inset 0 0 0 5px rgba(255,255,255,0.1);
-  color: white;
-  text-align: center;
-  align-items: center;
-  transition:
-  font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
-  flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
-  background 0.2s;
-  font-size: 20px;
-  background-size: cover;
-  background-position: center;
-  flex: 1;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-}
-
-.panel1 { 
-  background-image: url("pics/2019-06-18 09.39.46 1.jpg"); 
-}
-.panel2 { 
-  background-image: url("pics/2019-08-03\ 09.09.25\ 1.jpg"); 
-}
-.panel > * {
-  margin: 0;
+.image {
+  display: block;
   width: 100%;
-  transition: transform 0.5s;
-  flex: 1 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: auto;
 }
 
-
-.panel p {
-  font-family: 'Montserrat', sans-serif;
-  color: #eeeeee;
-  text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
-  font-size: 2em;
+.overlay {
+  position: inherit;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0, 0, 0, 0.534);
 }
 
-.panel p:nth-child(2) {
-  font-size: 4em;
+.panel:hover .overlay {
+  opacity: 1;
 }
 
-.panel.open {
-  flex: 5;
-  font-size: 40px;
-}
-
-@media only screen and (max-width: 600px) {
-  .panel p {
-    font-size: 1em;
-  }
-}
-
-a {
+.a {
   text-decoration: none;
-  padding: 30px 20px;
-  display: inline-block;
-  color: rgb(160, 160, 160);
-  background-color: inherit;
-  border: none;
+  position: inherit;
+  color: white;
   font-size: 20px;
-  transition: all 0.2s;
-  text-transform: uppercase;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }

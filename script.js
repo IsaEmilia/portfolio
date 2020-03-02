@@ -11,6 +11,7 @@ function fixNav(callMe) {
         
     } else {
       document.body.classList.remove('fixed-nav')
+      document.body.style.paddingTop = 0;
     }
   } 
 
@@ -21,22 +22,22 @@ window.addEventListener('scroll', fixNav);
 
 // // Gallery
 
-const panels = document.querySelectorAll('.panel');
+// const panels = document.querySelectorAll('.panel');
 
-function toggleOpen() {
-  console.log('Hello');
-  this.classList.toggle('open');
-}
+// function toggleOpen() {
+//   console.log('Hello');
+//   this.classList.toggle('open');
+// }
 
-function toggleActive(e) {
-  console.log(e.propertyName);
-  if (e.propertyName.includes('flex')) {
-    this.classList.toggle('open-active');
-  }
-}
+// function toggleActive(e) {
+//   console.log(e.propertyName);
+//   if (e.propertyName.includes('grid')) {
+//     this.classList.toggle('open-active');
+//   }
+// }
 
-panels.forEach(panel => panel.addEventListener('onmouseover', toggleOpen));
-panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
+// panels.forEach(panel => panel.addEventListener('onmouseover', toggleOpen));
+// panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
 
 // // Open the Modal
 // function openModal() {
