@@ -129,26 +129,40 @@ h3 {
 
 
 
-/* Gallery styles start riiight here */
+/* Photography sections styles start riiight here */
 
 .panels {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 300px);
   grid-gap: 10px;
+}
+
+.panel {
+  position: relative;
 }
 
 .image {
   display: block;
   width: 100%;
   height: auto;
+
 }
 
 .overlay {
-  position: inherit;
+  grid-row: 1 / 1;
+  margin-top: 26px;
+  margin-bottom: 26px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: rgba(0, 0, 0, 0.534);
+  background-color: rgba(0, 0, 0, 0.541);
 }
 
 .panel:hover .overlay {
@@ -162,4 +176,20 @@ h3 {
   font-size: 20px;
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.text {
+  font-family:'Montserrat', sans-serif; 
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  font-variant: small-caps;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border: 2px solid white;
 }
