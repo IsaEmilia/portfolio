@@ -15,7 +15,6 @@
       <ul>
         <li><a href="index.html#photography" class="tablink">Back to photography</a></li>
         <li><a href="index.html" class="tablink">Back to main</a></li>
-        <li><a href="index.html#contact" class="tablink">Impressed? Contact me!</a></li>
       </ul>
     </nav>
   </div>
@@ -24,13 +23,13 @@
   <div class="content">
 
     <div class="gallery">
-      <button onclick="one()">1</button>
-      <button onclick="two()">2</button>
-      <button onclick="four()">4</button>
+      <button class="view-button" onclick="one()">1</button>
+      <button class="view-button" onclick="two()">2</button>
+      <button class="view-button" onclick="four()">4</button>
 
       <div id="myModal" class="modal">
         <span class="close">
-          <button>&times;</button>
+          <button class="close-button">&times;</button>
         </span>
         <img class="modal-content" id="modal-img">
         <div id="caption"></div>
@@ -39,8 +38,9 @@
       <div class="row">
 
         <div class="column">
-          <div class="open-modal" onclick="openImage" id="tobeach" >
-            <img  src="pics/2019-06-18 11.34.33 1.jpg" width="100%" alt="To Beach" />
+
+          <div  id="tobeach" >
+            <img class="open-modal" src="pics/2019-06-18 11.34.33 1.jpg" width="100%" alt="To Beach" />
           </div>
 
           <div id="window" >
@@ -57,6 +57,7 @@
         </div>
 
         <div class="column">
+
           <div id="tobeach">
             <img class="open-modal" src="pics/2019-06-18 11.34.33 1.jpg" width="100%" alt="To Beach" />
           </div>
@@ -75,6 +76,7 @@
         </div>
 
         <div class="column">
+
           <div id="waves">
             <img class="open-modal" src="pics/2019-06-18 11.27.42 1.jpg" width="100%" alt="Waves" />
           </div>
@@ -118,7 +120,9 @@
   </div>
 
 
-  <script src="gallery.js"></script>
+  <script src="gallery.js">
+    
+  </script>
 </body>
 
 </html>

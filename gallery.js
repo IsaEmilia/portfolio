@@ -49,13 +49,21 @@ function four() {
 // Modal styling
 
 const modal = document.getElementById('myModal');
-//const image = document.querySelectorAll('open-modal');
+const modalImg = document.getElementById('modal-img');
 const captionText = document.getElementById('caption');
 const span = document.getElementsByClassName('close')[0];
 
-const image = document.querySelectorAll('.open-modal').addEventListener('click', function () {
-        console.log('works');
-    });
+const image = document.querySelectorAll('.open-modal').forEach((i) => {
+        console.log(i);
+        i.addEventListener("click", (event) => {
+            modal.style.display = "block"
+            console.log(event);
+            
+            modalImg.src = event.target.src
+        })
+      
+})
 
-// !image.style.display === "none" ? image.style.display = "block" : 
-// image.style.display = "none"
+span.addEventListener('click', function () {
+    modal.style.display = "none"
+    });
