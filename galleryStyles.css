@@ -3,7 +3,7 @@
 
 * {
     box-sizing: border-box;
-    max-height: 850px;
+    max-height: 950px;
 }
 
 /* styling fot the navbar */
@@ -203,9 +203,12 @@ img {
 }
 .colse-button:hover,
 .close-button:focus {
-    color: #bbb;
+    color: rgb(112, 110, 110);
     text-decoration: none;
     
+}
+.colse-button:hover{
+    color: #666;
 }
 @media only screen and (max-width: 700px){
     .modal-content {
