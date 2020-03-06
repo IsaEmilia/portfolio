@@ -129,7 +129,7 @@ h3 {
 
 
 
-/* Photography sections styles start riiight here */
+/* Photography and Drawings sections styles start riiight here */
 
 .panels {
   display: grid;
@@ -192,4 +192,5 @@ h3 {
   transform: translate(-50%, -50%);
   text-align: center;
   border: 2px solid white;
+  padding: 5px;
 }
