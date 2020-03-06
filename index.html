@@ -13,11 +13,11 @@
 
 <body>
 
-  <header>
+  <header id="header">
 
     <h1>isa emilia</h1>
 
-    
+
 
   </header>
 
@@ -25,12 +25,11 @@
   <div>
     <nav id="nav">
       <ul>
-        <li><button class="tablink">About</button></li>
-        <li><button class="tablink">Web Design</button></li>
-        <li><button class="tablink">Photography</button></li>
-        <li><button class="tablink">Drawings</button></li>
-        <li><button class="tablink">Makeup art</button></li>
-        <li><button class="tablink">Contact me</button></li>
+        <li><a id="aboutLink" href="#about" class="tablink">About</a></li>
+        <li><a href="#webDesign" class="tablink">Web Design</a></li>
+        <li><a href="#photography" class="tablink">Photography</a></li>
+        <li><a href="#drawing" class="tablink">Drawings</a></li>
+        <li><a href="#contact" class="tablink">Contact me</a></li>
       </ul>
     </nav>
   </div>
@@ -40,7 +39,8 @@
   <div id="content">
 
 
-    <div id="defaultOpen" class="tab-content">
+
+    <div id="about" class="tab-content">
 
       <img id="profile-pic" src="pics/avatar1.jpg" width="25%" />
 
@@ -48,7 +48,7 @@
 
       <div id="novel">
         <p>Hello there. My name is Isa and you have found my portfolio!</p>
-        <p>One beautiful day there will be content on this page. Today is not that day.
+        <p>One beautiful day there will be content on this page. Today is not that day. Everything is under construction!
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore tempora rerum, est autem
           cupiditate,
           corporis a qui libero ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut
@@ -100,261 +100,88 @@
 
     <div id="photography" class="tab-content">
       <h3>Photography</h3>
-      <p>Here's some of my photography, just exaple photos. Some day this will look nicer :)</p>
+      <p></p>
       <hr />
 
-      <div class="row">
+      <div class="panels">
+        
 
-        <div class="column">
-          <img src="pics/2019-06-15 03.48.26 1.jpg" width="20%" alt="Oula" onclick="openModal();currentSlide(1)"
-            class="hover-shadow" />
+        <div id="estonia" class="panel">
+          <a href="estonia.html">
+            <img src="pics/2019-06-18 09.39.46 1.jpg" 
+                 class="image"
+                 alt="Estonia">
+             <div class="overlay">
+               <div class="text"> Estonia 2019</div>
+             </div>    
+          </a>
         </div>
 
-
-        <div class="column">
-          <img src="pics/2019-06-18 09.39.46 1.jpg" width="20%" alt="Church" onclick="openModal();currentSlide(2)"
-            class="hover-shadow" />
+       
+        <div id="lapland" class="panel">
+          <a href="estonia.html">
+            <img src="pics/2019-08-01 06.11.17 1.jpg" 
+                 class="image"
+                 alt="Estonia">
+             <div class="overlay">
+               <div class="text"> Lapland 2019</div>
+             </div>    
+          </a>
         </div>
 
-        <div class="column">
-          <img src="pics/2019-06-18 11.34.33 1.jpg" width="20%" alt="To Beach" onclick="openModal();currentSlide(3)"
-            class="hover-shadow" />
+        <div id="luna" class="panel">
+          <a href="estonia.html">
+            <img src="pics/2019-08-16 04.56.47 1.jpg" 
+                 class="image"
+                 alt="Estonia"
+                 width="99%">
+             <div class="overlay">
+               <div class="text"> Luna  <br /> 2016 &#8594;</div>
+             </div>    
+          </a>
         </div>
 
-        <div class="column">
-          <img src="pics/2019-07-26 03.34.12 1.jpg" width="20%" alt="Lake" onclick="openModal();currentSlide(4)"
-            class="hover-shadow" />
-        </div>
-
-        <div class="column">
-          <img src="pics/2019-07-30 12.38.02 1.jpg" width="20%" alt="Lake" onclick="openModal();currentSlide(5)"
-            class="hover-shadow" />
-        </div>
-
-        <div class="column">
-          <img src="pics/2019-07-31 12.46.04 1.jpg" width="20%" alt="Lake" onclick="openModal();currentSlide(6)"
-            class="hover-shadow" />
-        </div>
-
-        <div class="column">
-          <img src="pics/2019-08-01 06.11.17 1.jpg" width="20%" alt="Lake" onclick="openModal();currentSlide(7)"
-            class="hover-shadow" />
-        </div>
-
-        <div class="column">
-          <img src="pics/2019-08-08 03.06.27 1.jpg" width="20%" alt="Lake" onclick="openModal();currentSlide(8)"
-            class="hover-shadow" />
-        </div>
-
-        <div class="column">
-          <img src="pics/2019-06-18 09.20.19 1.jpg" width="20%" alt="Window" onclick="openModal();currentSlide(9)"
-            class="hover-shadow" />
-        </div>
-
-        <div class="column">
-          <img src="pics/2019-08-08 03.03.18 1.jpg" width="20%" alt="Purple Lake" onclick="openModal();currentSlide(10)"
-            class="hover-shadow" />
-        </div>
-
-        <div class="column">
-          <img src="pics/2019-08-16 04.56.47 1.jpg" width="20%" alt="Luna" onclick="openModal();currentSlide(11)"
-            class="hover-shadow" />
-        </div>
-
-        <div class="column">
-          <img src="pics/2019-08-03 09.09.25 1.jpg" width="20%" alt="Woods" onclick="openModal();currentSlide(12)"
-            class="hover-shadow" />
-        </div>
-
-
-      </div>
-
-
-      <div id="myModal" class="modal">
-        <span class="close cursor" onclick="closeModal()">&times;</span>
-        <div class="modal-content">
-
-          <div class="mySlides">
-            <div class="numbertext">1 / 8</div>
-            <img src="pics/2019-06-15 03.48.26 1.jpg" style="width:100%">
-          </div>
-
-          <div class="mySlides">
-            <div class="numbertext">2 / 8</div>
-            <img src="pics/2019-06-18 09.39.46 1.jpg" style="width:100%">
-          </div>
-
-          <div class="mySlides">
-            <div class="numbertext">3 / 8</div>
-            <img src="pics/2019-06-18 11.34.33 1.jpg" style="width:100%">
-          </div>
-
-          <div class="mySlides">
-            <div class="numbertext">4 / 8</div>
-            <img src="pics/2019-07-26 03.34.12 1.jpg" style="width:100%">
-          </div>
-
-          <div class="mySlides">
-            <div class="numbertext">5 / 8</div>
-            <img src="pics/2019-07-30 12.38.02 1.jpg" style="width:100%">
-          </div>
-
-          <div class="mySlides">
-            <div class="numbertext">6 / 8</div>
-            <img src="pics/2019-07-31 12.46.04 1.jpg" style="width:100%">
-          </div>
-
-          <div class="mySlides">
-            <div class="numbertext">7 / 8</div>
-            <img src="pics/2019-08-01 06.11.17 1.jpg" style="width:100%">
-          </div>
-
-          <div class="mySlides">
-            <div class="numbertext">8 / 8</div>
-            <img src="pics/2019-08-08 03.06.27 1.jpg" style="width:100%">
-          </div>
-
-          <div class="mySlides">
-            <div class="numbertext">8 / 8</div>
-            <img src="pics/2019-06-18 09.20.19 1.jpg" style="width:100%">
-          </div>
-
-          <div class="mySlides">
-            <div class="numbertext">8 / 8</div>
-            <img src="pics/2019-08-08 03.03.18 1.jpg" style="width:100%">
-          </div>
-
-          <div class="mySlides">
-            <div class="numbertext">8 / 8</div>
-            <img src="pics/2019-08-16 04.56.47 1.jpg" style="width:100%">
-          </div>
-
-          <div class="mySlides">
-            <div class="numbertext">8 / 8</div>
-            <img src="pics/2019-08-03 09.09.25 1.jpg" style="width:100%">
-          </div>
-
-
-
-
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-
-          <div class="caption-container">
-            <p id="caption"></p>
-          </div>
-
-          <div class="column">
-            <img class="demo" src="pics/2019-06-15 03.48.26 1.jpg" onclick="currentSlide(1)" alt="Oula">
-          </div>
-
-          <div class="column">
-            <img class="demo" src="pics/2019-06-18 09.39.46 1.jpg" onclick="currentSlide(2)" alt="Church">
-          </div>
-
-          <div class="column">
-            <img class="demo" src="pics/2019-06-18 11.34.33 1.jpg" onclick="currentSlide(3)" alt="To Beach">
-          </div>
-
-          <div class="column">
-            <img class="demo" src="pics/2019-07-26 03.34.12 1.jpg" onclick="currentSlide(4)" alt="Waterlily">
-          </div>
-
-          <div class="column">
-            <img class="demo" src="pics/2019-07-30 12.38.02 1.jpg" onclick="currentSlide(5)" alt="Log">
-          </div>
-
-          <div class="column">
-            <img class="demo" src="pics/2019-07-31 12.46.04 1.jpg" onclick="currentSlide(6)" alt="Sunset">
-          </div>
-
-          <div class="column">
-            <img class="demo" src="pics/2019-08-01 06.11.17 1.jpg" onclick="currentSlide(7)" alt="Bucket">
-          </div>
-
-          <div class="column">
-            <img class="demo" src="pics/2019-08-08 03.06.27 1.jpg" onclick="currentSlide(8)" alt="Mirror">
-          </div>
-
-          <div class="column">
-            <img class="demo" src="pics/2019-06-18 09.20.19 1.jpg" onclick="currentSlide(8)" alt="Window">
-          </div>
-
-          <div class="column">
-            <img class="demo" src="pics/2019-08-08 03.03.18 1.jpg" onclick="currentSlide(8)" alt="Purple Lake">
-          </div>
-
-          <div class="column">
-            <img class="demo" src="pics/2019-08-16 04.56.47 1.jpg" onclick="currentSlide(8)" alt="Luna">
-          </div>
-
-          <div class="column">
-            <img class="demo" src="pics/2019-08-03 09.09.25 1.jpg" onclick="currentSlide(8)" alt="Woods">
-          </div>
-
-        </div>
-      </div>
+      </div> 
     </div>
 
+    </div>
 
-
-
-    <div id="draving" class="tab-content">
+    <div id="drawing" class="tab-content">
       <h3>Drawings</h3>
-      <p>Nah, it's just my cat</p>
-        <hr />
-      <div id="imageGrid">
-        <img src="pics/2019-08-16 04.56.47 1.jpg" width="20%" />
-        <img src="pics/2019-08-16 04.56.47 1.jpg" width="20%" />
-        <img src="pics/2019-08-16 04.56.47 1.jpg" width="20%" />
-        <img src="pics/2019-08-16 04.56.47 1.jpg" width="20%" />
-        <img src="pics/2019-08-16 04.56.47 1.jpg" width="20%" />
-        <img src="pics/2019-08-16 04.56.47 1.jpg" width="20%" />
-        <img src="pics/2019-08-16 04.56.47 1.jpg" width="20%" />
-        <img src="pics/2019-08-16 04.56.47 1.jpg" width="20%" />
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore tempora rerum, est autem
-          cupiditate,
-          corporis a qui libero ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis
-          aut
-          asperiores
-          omnis blanditiis quod quas laborum nam! Fuga ad tempora in aspernatur pariatur fugit
-          quibusdam
-          dolores
-          sunt esse magni, ut, dignissimos.</p>
-      </div>
+      
+      <hr />
+
+      <div class="panels">
+
+        <div id="sketches" class="panel">
+          <a href="">
+            <img src="pics/2020-02-27 02.13.19 1.jpg" 
+                 class="image"
+                 alt="Sketch">
+             <div class="overlay">
+               <div class="text"> Sketches</div>
+             </div>    
+          </a>
+        </div>
+
+        <div id="digital" class="panel">
+          <a href="">
+            <img src="pics/IMG_20200303_211800.jpg" 
+                 class="image"
+                 alt="Digital art">
+             <div class="overlay">
+               <div class="text"> Digital art</div>
+             </div>    
+          </a>
+        </div>
+
+
+
+        </div>
+      
     </div>
 
-    <div class="tab-content">
-
-
-
-      <h3 id="me">Makeup Art</h3>
-
-      <div id="novel">
-        <p> i do makeup art too!</p>
-        <hr />
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore tempora rerum, est autem
-          cupiditate,
-          corporis a qui libero ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut
-          asperiores
-          omnis blanditiis quod quas laborum nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam
-          dolores
-          sunt esse magni, ut, dignissimos.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore tempora rerum, est autem
-          cupiditate,
-          corporis a qui libero ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut
-          asperiores
-          omnis blanditiis quod quas laborum nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam
-          dolores
-          sunt esse magni, ut, dignissimos.</p>
-
-      </div>
-    </div>
-
-    <div class="tab-content">
-
-
+    <div id="contact" class="tab-content">
 
       <h3 id="me">Contact</h3>
 
@@ -365,13 +192,18 @@
         <ul>
           <li>Email: isaemilia@gmail.com</li>
           <li>Social media: </li>
+          <a>github icon with a link here</a>
+          <br />
+          <a>LinkedIn icon with a link here</a>
+          <br />
+          <a>Instagram icon with a link here</a>
         </ul>
 
       </div>
     </div>
 
-
   </div>
+
 
   <div>
     <footer></footer>

@@ -1,53 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Megrim&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
-html {
-  box-sizing: border-box;
-  background: #eeeeee;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 20px;
-  font-weight: 200;
-}
-
-body {
-  margin: 0;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing:border-box;
-}
-
-.tab-content {
-  max-width: 800px;
-  margin: 50px auto;
-  background: white;
-  padding: 50px;
-  text-align: justify;
-  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
-  
-
-}
-
-#defaulOpen {
-
-  max-width: 800px;
-  margin: 40px auto;
-  background: white;
-  padding: 50px;
-  text-align: justify;
-  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
-  
-  transition: transform 0.5s;
-}
-
-#profile-pic {
-  border-radius: 50%;
-  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
-}
-
-
+/* Header styling*/
 header {
   text-align: center;
   height: 92vh;
@@ -65,12 +19,12 @@ h1 {
   font-family: 'Megrim', cursive;
 }
 
-
-
-h3 {
-  font-family: 'Megrim', cursive;
+.hidden {
+  display: none;
 }
 
+
+/* Navbar styling starts here! */
 nav {
   background: rgb(5, 5, 5);
   top: 0;
@@ -85,10 +39,13 @@ nav {
   box-shadow: 0 5px rgba(0, 0, 0, 0.1);
 }
 
+.fixed-nav a {
+  padding: 20px 20px;
+}
+
 nav ul {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
-  padding: 10;
   list-style: none;
   display: flex;
 }
@@ -97,13 +54,12 @@ nav li {
   flex: 1;
   text-align: center;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
-nav button {
+nav a {
   text-decoration: none;
-  padding: 35px 20px;
+  padding: 30px 20px;
   display: inline-block;
   color: rgb(160, 160, 160);
   background-color: inherit;
@@ -113,173 +69,128 @@ nav button {
   text-transform: uppercase;
 }
 
-nav button:hover {
+nav a:hover {
   color: rgb(83, 83, 83);
 }
 
-nav button:active {
-  color: grey;
-  background-color: rgb(41, 38, 38);
-  outline: none;
+
+/* Styling for body and page content */
+html {
+  box-sizing: border-box;
+  background: #eeeeee;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+h3 {
+  font-family: 'Megrim', cursive;
+}
+
+.tab-content {
+  max-width: 800px;
+  margin: 100px auto;
+  background: white;
+  padding: 70px;
+  margin-top: 150px;
+  text-align: justify;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* About page */
+#about {
+  max-width: 800px;
+  margin: 40px auto;
+  margin-top: 60px;
+  background: white;
+  padding: 50px;
+  padding-top: 120px;
+  text-align: justify;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.5s;
+}
+
+#profile-pic {
+  border-radius: 50%;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
 }
 
 
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0
+
+/* Photography and Drawings sections styles start riiight here */
+
+.panels {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 300px);
+  grid-gap: 10px;
 }
 
-.column {
-  float: right;
-  flex: 50%;
-  max-width: 25%;
+.panel {
+  position: relative;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
   
 }
 
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-}
-
-@media screen and (max-width: 800px) {
-  .column {
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
-  }
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.row > .column {
-  padding: 0 8px;
-}
-
-
-.modal:target {
-  outline: none;
-}
-
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 100px;
+.overlay {
+  grid-row: 1 / 1;
+  margin-top: 26px;
+  margin-bottom: 26px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
   left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.842);
-}
-
-.modal-content {
-  position: relative;
-  background-color: #fefefe;
-  margin: auto;
-  padding: 0;
-  width: 40%;
-  max-width: 1200px;
-}
-
-.close {
-  color: white;
-  position: absolute;
-  top: 10px;
-  right: 25px;
-  font-size: 35px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #999;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.mySlides {
-  display: none;
-}
-
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-
-.next {
   right: 0;
-  border-radius: 3px 0 0 3px;
+  height: 95%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0, 0, 0, 0.541);
 }
 
-
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-  display: none;
-}
-
-
-.caption-container {
-  text-align: center;
-  background-color: black;
-  padding: 2px 16px;
-  color: white;
-}
-
-img.demo {
-  opacity: 0.6;
-  max-height: 10vh;
-}
-
-.active,
-.demo:hover {
+.panel:hover .overlay {
   opacity: 1;
 }
 
-img.hover-shadow {
-  transition: 0.3s;
+.a {
+  text-decoration: none;
+  position: inherit;
+  color: rgba(255, 255, 255, 0.795);
+  font-size: 20px;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
-.hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-ul {
-  list-style-type: none;
+.text {
+  font-family:'Montserrat', sans-serif; 
+  color: rgba(255, 255, 255, 0.795);
+  font-size: 20px;
+  font-weight: bold;
+  font-variant: small-caps;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border: 2px solid white;
+  padding: 5px;
 }
