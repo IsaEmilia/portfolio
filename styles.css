@@ -135,8 +135,8 @@ h3 {
 .panels {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(1, 300px);
-  grid-gap: 10px;
+  grid-template-rows: auto;
+  grid-gap: 5px;
 }
 
 .panel {
@@ -145,9 +145,11 @@ h3 {
 
 .image {
   display: block;
-  width: 100%;
-  height: auto;
-  
+  justify-self: center;
+  width: 200px;
+  height: 270px;
+  min-width: 100px;
+  min-height: 150px;
 }
 
 .overlay {
@@ -159,8 +161,8 @@ h3 {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 95%;
-  width: 100%;
+  width: 200px;
+  height: 270px;
   opacity: 0;
   transition: .5s ease;
   background-color: rgba(0, 0, 0, 0.541);

@@ -56,6 +56,7 @@ nav a:hover {
     color: rgb(83, 83, 83);
 }
 
+
 /* Styling for page content */
 html {
     box-sizing: border-box;
@@ -164,7 +165,7 @@ img {
     padding-top: 60px;
     overflow: auto;
     background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.432);
+    background-color: rgba(0, 0, 0, 0.85);
 }
 
 .modal-content {

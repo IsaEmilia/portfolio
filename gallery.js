@@ -43,6 +43,7 @@ function four() {
     for (i = 0; i < elements.length; i++) {
         elements[i].style.flex = "25%";
     }
+    console.log("i work four")
 }
 
 
@@ -54,10 +55,10 @@ const captionText = document.getElementById('caption');
 const span = document.getElementsByClassName('close')[0];
 
 const image = document.querySelectorAll('.open-modal').forEach((i) => {
-        console.log(i);
+        
         i.addEventListener("click", (event) => {
             modal.style.display = "block"
-            console.log(event);
+            
             
             modalImg.src = event.target.src
         })
