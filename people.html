@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <link href="galleryStyles.css" rel="stylesheet">
+</head>
+
+
+<body >
+  <div>
+    <nav id="nav">
+      <ul>
+        <li><a href="index.html#photography" class="tablink">Back to photography</a></li>
+        <li><a href="index.html" class="tablink">Back to main</a></li>
+      </ul>
+    </nav>
+  </div>
+
+
+  <div class="content">
+
+    <div class="gallery">
+      <button class="view-button" onclick="one()">1</button>
+      <button class="view-button" onclick="two()">2</button>
+      <button class="view-button" onclick="four()">4</button>
+
+      <div id="myModal" class="modal">
+        <span class="close">
+          <button class="close-button">&times;</button>
+        </span>
+        <img class="modal-content" id="modal-img">
+        <div id="caption"></div>
+      </div>
+
+      <p>2020</p>
+      <div class="row">
+          
+        <div class="column">
+
+          <div  id="rami" >
+            <img class="open-modal" src="pics/rami.jpg" width="100%" alt="Rami" />
+          </div>
+
+          <div id="ramithawi" >
+            <img class="open-modal" src="pics/ramithawi.jpg" width="100%" alt="Ramithawi" />
+          </div>
+
+          <div id="rami3" >
+            <img class="open-modal" src="pics/rami3.jpg" width="100%" alt="Rami" />
+          </div>
+
+          <div id="oula3">
+            <img class="open-modal" src="pics/oula3.jpg" width="100%" alt="Oula" />
+          </div>
+        </div>
+
+        <div class="column">
+
+          <div  id="rami2" >
+            <img class="open-modal" src="pics/rami2.jpg" width="100%" alt="Rami" />
+          </div>
+
+          <div id="antti2" >
+            <img class="open-modal" src="pics/antti2.jpg" width="100%" alt="Antti" />
+          </div>
+
+          <div id="ukko" >
+            <img class="open-modal" src="pics/ukko.jpg" width="100%" alt="Ukko" />
+          </div>
+
+          <div id="rami4">
+            <img class="open-modal" src="pics/rami4.jpg" width="100%" alt="Rami" />
+          </div>
+        </div>
+
+        <div class="column">
+
+          <div id="fishing2">
+            <img class="open-modal" src="pics/fishing.jpg" width="100%" alt="Evening Fishing" />
+          </div>
+
+          <div id="boat">
+            <img class="open-modal" src="pics/boat.jpg" width="100%" alt="Boat" />
+          </div>
+
+          <div id="swamp">
+            <img class="open-modal" src="pics/swamp.jpg" width="100%" alt="Swamp" />
+          </div>
+        </div>
+
+        <div class="column">
+          <div id="sunset1">
+            <img class="open-modal" src="pics/sunset1.jpg" width="100%" alt="Sunset" />
+          </div>
+
+          <div id="swamp2">
+            <img class="open-modal" src="pics/swamp2.jpg" width="100%" alt="Swamp" />
+          </div>
+
+          <div id="yellow-boat2">
+            <img class="open-modal" src="pics/yellow-boat2.jpg" width="100%" alt="Yellow boat in a Clear Lake" />
+          </div>
+        </div>
+
+      </div>
+
+      <p>2019</p>
+      <div class="row">
+          
+        <div class="column">
+
+          <div  id="redbucket" >
+            <img class="open-modal" src="pics/bucket.jpg" width="100%" alt="Red Bucket" />
+          </div>
+
+          <div id="rocks" >
+            <img class="open-modal" src="pics/rockybeach.jpg" width="100%" alt="rocks" />
+          </div>
+
+          <div id="fishing" >
+            <img class="open-modal" src="pics/2020-07-16 12.06.11 1.jpg" width="100%" alt="Fishing" />
+          </div>
+
+          <div id="redsunset2">
+            <img class="open-modal" src="pics/2020-07-19 11.19.32 1.jpg" width="100%" alt="Red Sunset" />
+          </div>
+        </div>
+
+        <div class="column">
+
+          <div  id="redsunset3" >
+            <img class="open-modal" src="pics/2020-07-19 11.18.13 1.jpg" width="100%" alt="Red Sunset" />
+          </div>
+
+          <div id="yellow-boat" >
+            <img class="open-modal" src="pics/yellow-boat.jpg" width="100%" alt="Yellow Boat" />
+          </div>
+
+          <div id="woods" >
+            <img class="open-modal" src="pics/woods.jpg" width="100%" alt="Sunset Through Trees" />
+          </div>
+
+          <div id="mirror-sunset">
+            <img class="open-modal" src="pics/mirror-sunset.jpg" width="100%" alt="Sunset" />
+          </div>
+        </div>
+        <div class="column">
+
+            <div  id="redbucket" >
+              <img class="open-modal" src="pics/bucket.jpg" width="100%" alt="Red Bucket" />
+            </div>
+  
+            <div id="storm" >
+              <img class="open-modal" src="pics/2020-07-23 01.08.29 1.jpg" width="100%" alt="Storm" />
+            </div>
+  
+            <div id="fishing" >
+              <img class="open-modal" src="pics/2020-07-16 12.06.11 1.jpg" width="100%" alt="Fishing" />
+            </div>
+  
+            <div id="redsunset2">
+              <img class="open-modal" src="pics/2020-07-19 11.19.32 1.jpg" width="100%" alt="Red Sunset" />
+            </div>
+          </div>
+  
+          <div class="column">
+  
+            <div  id="redsunset3" >
+              <img class="open-modal" src="pics/2020-07-19 11.18.13 1.jpg" width="100%" alt="Red Sunset" />
+            </div>
+  
+            <div id="yellow-boat" >
+              <img class="open-modal" src="pics/yellow-boat.jpg" width="100%" alt="Yellow Boat" />
+            </div>
+  
+            <div id="woods" >
+              <img class="open-modal" src="pics/woods.jpg" width="100%" alt="Sunset Through Trees" />
+            </div>
+  
+            <div id="mirror-sunset">
+              <img class="open-modal" src="pics/mirror-sunset.jpg" width="100%" alt="Sunset" />
+            </div>
+          </div>
+
+      </div>
+
+
+    </div>
+    
+
+    <div class="stories">
+      <div class="sticky">
+      <h2>People</h2>
+      <p>Posio on yksi Lapin eteläisimmistä kunnista.
+        Rem doloribus ea odio? Voluptatum suscipit blanditiis
+        atque unde amet magni beatae hic eos quaerat, ab molestias
+        quidem assumenda eveniet nisi minus?</p>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="gallery.js">
+    
+  </script>
+</body>
+
+</html>
