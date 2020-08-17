@@ -1,3 +1,5 @@
+// Code for sticky navbar
+
 const nav = document.querySelector('#nav');
 let topOfNav = nav.offsetTop;
 let header = document.getElementById('header')
@@ -13,16 +15,14 @@ function fixNav(callMe) {
     }
 }
 
-
 window.addEventListener('load', fixNav)
 window.addEventListener('scroll', fixNav);
 
 
-
+// Multi choice image view whatever buttons
 const elements = document.getElementsByClassName('column');
 
-
-
+// One image view
 function one() {
     for (i = 0; i < elements.length; i++) {
         elements[i].style.flex = "100%";
@@ -48,7 +48,6 @@ function four() {
 
 
 // Modal styling
-
 const modal = document.getElementById('myModal');
 const modalImg = document.getElementById('modal-img');
 const captionText = document.getElementById('caption');
@@ -58,8 +57,6 @@ const image = document.querySelectorAll('.open-modal').forEach((i) => {
         
         i.addEventListener("click", (event) => {
             modal.style.display = "block"
-            
-            
             modalImg.src = event.target.src
         })
       
