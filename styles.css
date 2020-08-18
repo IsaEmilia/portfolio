@@ -217,7 +217,7 @@ h3 {
 /* Footer */
 footer {
   color: #eeeeee;
-  background: rgb(5, 5, 5);
+  background: rgba(5, 5, 5, 0.849);
   height: 200px;
   padding: 20px
 }
