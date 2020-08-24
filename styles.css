@@ -5,7 +5,7 @@
 header {
   text-align: center;
   height: 92vh;
-  background: linear-gradient(rgba(116, 241, 153, 0.137), rgba(0, 0, 0, 0.9)), url(pics/swamp.jpg) bottom center no-repeat;
+  background: linear-gradient(rgba(81, 226, 124, 0.151), rgba(0, 0, 0, 0.9)), url(pics/swamp.jpg) bottom center no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -13,7 +13,7 @@ header {
 }
 
 h1 {
-  color: rgba(255, 255, 255, 0.274);
+  color: rgba(255, 255, 255, 0.336);
   font-size: 12vw;
   letter-spacing: 30px;
   font-family: 'Megrim', cursive;
