@@ -94,6 +94,7 @@ h3 {
 }
 .sticky {
     padding-top: 60px;
+    padding-right: 20px;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
