@@ -21,6 +21,7 @@
 
 
   <div class="content">
+    
 
     <div class="gallery">
       <button class="view-button" onclick="one()">1</button>
@@ -120,7 +121,20 @@
 
     </div>
 
-    <div class="stories">
+    
+    <button onclick="openStory()" 
+            id="storybutton">
+            read
+    </button>
+
+    <div id="stories">
+
+    <button 
+      id="closestory"
+      onclick="closeStory()">
+      &times;
+    </button>
+  
       <div class="sticky">
       <h2>Estonia</h2>
       <p>In the June of 2019 I rode my bicycle from Helsinki to Haapsalu, 

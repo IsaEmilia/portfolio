@@ -64,4 +64,22 @@ const image = document.querySelectorAll('.open-modal').forEach((i) => {
 
 span.addEventListener('click', function () {
     modal.style.display = "none"
-    });
+});
+
+
+//Sidebar button
+
+const openbutton = document.getElementById('storybutton')
+const closebutton = document.getElementById('closestory')
+const stories = document.getElementById('stories')
+
+
+function openStory() {
+    
+    stories.style.display="block"
+}
+function closeStory() {
+    
+    stories.style.display="none"
+}
+
