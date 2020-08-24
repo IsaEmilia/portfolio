@@ -74,12 +74,18 @@ const closebutton = document.getElementById('closestory')
 const stories = document.getElementById('stories')
 
 
-function openStory() {
-    
-    stories.style.display="block"
+function openStory(width) {
+    stories.style.width="350px"
+    stories.style.padding="10px"
 }
-function closeStory() {
-    
-    stories.style.display="none"
+function closeStory(width) {
+
+    stories.style.width="0"
+    stories.style.padding="0"
+
 }
 
+let width = window.matchMedia("(max-width: 1050px)")
+openStory(width)
+closeStory(width)
+width.addListener(openStory, closeStory)
