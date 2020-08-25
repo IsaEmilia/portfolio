@@ -124,7 +124,7 @@ img {
 }
 
 .column {
-    flex: 50%;
+    flex: 25%;
     padding: 0 4px;
 }
 
@@ -302,19 +302,21 @@ img {
     }
  
     #storybutton {
+      grid-row: 1;
+      grid-column: 1;
       background-color: rgb(17, 17, 17);
-      border:none;
+      border: none;
       border-radius: 0% 10% 10% 0%;
       width: 35px;
       height: 40px;
-      color: bisque;
+      color: rgb(252, 241, 228);
       padding: 5px;
-      grid-column: 1;
       display: block;
-      position: absolute;
-      top: 60px;
+      top: 35px;
       left: 0;
       font-size: 20px;
+      position: sticky;
+      position: -webkit-sticky;
     }
 
     #closestory {
@@ -334,25 +336,29 @@ img {
     }
 
     #closestory:hover {
-        color: rgb(16, 75, 52);
+        color: rgb(20, 94, 66);
         font-size: 21px;
         z-index: 2;
     }
     
     #storybutton:hover {
-        color: rgb(16, 75, 52);
+        color: rgb(20, 94, 66);
         font-size: 20px;
     }
 
     /*GALLERY*/
-
-    /*making gallery 100%*/
-
+ 
+    .content {
+        grid-template-columns: 1fr 60fr;
+        margin: 0;
+        margin-right: 30px;
+        grid-gap: 0;
+    }
 
     .gallery {
         margin-top: 40px;
         padding:0;
-        grid-column: 1 / -1;
+        grid-column: 2 / -1;
         grid-row: 1;
     }
     
