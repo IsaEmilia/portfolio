@@ -353,6 +353,7 @@ img {
         margin: 0;
         margin-right: 30px;
         grid-gap: 0;
+        grid-auto-flow: dense;
     }
 
     .gallery {
@@ -363,7 +364,8 @@ img {
     }
     
     img {
-        max-width: 900px;
+        max-width: 700px;
+        min-width: 120px;
     }
     
     .row {
