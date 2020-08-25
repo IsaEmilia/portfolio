@@ -82,6 +82,8 @@ h3 {
     margin: 10px 70px;
 }
 
+/*little story section*/
+
 #stories {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
@@ -90,7 +92,7 @@ h3 {
     padding-right: 20px;
     margin-right: 20px;
     width: 100%;
-
+   
 }
 .sticky {
     padding-top: 60px;
@@ -133,7 +135,7 @@ img {
 
 .view-button {
     border: none;
-    background-color: #ccc;
+    background-color: rgba(204, 204, 204, 0.26);
     padding: 5px 9px 5px 9px;
     border-radius: 50%;
 }
@@ -226,6 +228,9 @@ img {
     display: none;
 }
 
+
+
+
 /* Small screens */
 @media only screen and (max-width: 1050px) {
 
@@ -265,11 +270,9 @@ img {
       transition: all 0.2s;
       text-transform: uppercase;
     }
-
     h3 {
         font-family: 'Megrim', cursive;
     }
-
 
     /*story section*/
     html {
@@ -303,7 +306,7 @@ img {
       border:none;
       border-radius: 0% 10% 10% 0%;
       width: 35px;
-      height: 30px;
+      height: 40px;
       color: bisque;
       padding: 5px;
       grid-column: 1;
@@ -311,6 +314,7 @@ img {
       position: absolute;
       top: 60px;
       left: 0;
+      font-size: 20px;
     }
 
     #closestory {
@@ -326,17 +330,18 @@ img {
         right: 0;
         font-size: 20px;
         z-index: 2;
+        text-align: center;
     }
 
-    .closestory:hover {
+    #closestory:hover {
         color: rgb(16, 75, 52);
         font-size: 21px;
+        z-index: 2;
     }
     
-    .storybutton:hover {
-        background-color: rgb(51, 50, 50);
-        width: 36px;
-      height: 31px;
+    #storybutton:hover {
+        color: rgb(16, 75, 52);
+        font-size: 20px;
     }
 
     /*GALLERY*/

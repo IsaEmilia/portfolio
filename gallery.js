@@ -67,7 +67,8 @@ span.addEventListener('click', function () {
 });
 
 
-//Sidebar button
+//Sidebar button for mobile view
+//It fucks up desktop view
 
 const openbutton = document.getElementById('storybutton')
 const closebutton = document.getElementById('closestory')
@@ -79,7 +80,6 @@ function openStory(width) {
     stories.style.padding="10px"
 }
 function closeStory(width) {
-
     stories.style.width="0"
     stories.style.padding="0"
 
