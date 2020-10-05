@@ -99,7 +99,8 @@ body {
 }
 
 h3 {
-  font-family: 'Megrim', cursive;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
 }
 
 .tab-content {
